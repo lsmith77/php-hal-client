@@ -13,6 +13,7 @@ namespace Ekino\HalClient;
 
 use Ekino\HalClient\HttpClient\HttpClientInterface;
 use Ekino\HalClient\HttpClient\HttpResponse;
+use Ekino\HalClient\Resource;
 
 class EntryPoint
 {
@@ -37,8 +38,6 @@ class EntryPoint
         $this->url     = $url;
         $this->client  = $client;
         $this->headers = $headers;
-
-        $this->resource = false;
     }
 
     /**
